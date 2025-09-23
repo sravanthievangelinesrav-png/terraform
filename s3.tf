@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"  # Change region if needed
+  region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "sravanthi_bucket" {
