@@ -1,12 +1,14 @@
+
 # ✅ No provider block here
-resource "aws_s3_bucket" "sravanthi_bucket" {
-  bucket = "sravanthi-srav123-bucket-af3d7e2b"
+resource "aws_s3_bucket" "kavya_bucket" {
+  bucket = "kavya-ram-bucket-dftgfff"
 
   tags = {
-    Name        = "sravanthi-srav123"
+    Name        = "kavya-ram-bucket"
     Environment = "Dev"
   }
 }
+
 
 
 
