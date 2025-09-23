@@ -7,6 +7,16 @@ resource "aws_s3_bucket" "sravanthi_bucket" {
     Environment = "Dev"
   }
 }
+# ✅ No provider block here
+resource "aws_s3_bucket" "ramu_bucket" {
+  bucket = "ramu-ram-bucket-dftgfff"
+
+  tags = {
+    Name        = "ramu-srav123"
+    Environment = "Dev"
+  }
+}
+
 
 
 
