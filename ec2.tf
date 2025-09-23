@@ -64,6 +64,14 @@ resource "aws_instance" "jenkins_instance" {
               sudo systemctl enable jenkins
               sudo systemctl start jenkins
               sudo systemctl status jenkins -l --no-pager
+
+              echo "⏳ Waiting for Jenkins to initialize..."
+              sleep 30
+
+              echo "🔑 Saving Jenkins Initial Admin Password..."
+              sudo cat /var/lib/jenkins/secrets/initialAdminPassword > /home/ec2-user/jenkins_initial_password.txt
+              sudo chmod 644 /home/ec2-user/jenkins_initial_password.txt
+
               EOF
 
   tags = {
