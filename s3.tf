@@ -1,21 +1,9 @@
-# ec2.tf
-provider "aws" {
-  region = "us-east-1"
-}
-
-# s3.tf
-provider "aws" {
-  alias  = "s3region"
-  region = "us-east-2"
-}
-
-resource "aws_s3_bucket" "raham_bucket" {
-  provider = aws.s3region  # ← use the alias here
-
-  bucket = "ramu-srav345-bucket-af3d7e2b"
+# ✅ No provider block here
+resource "aws_s3_bucket" "sravanthi_bucket" {
+  bucket = "sravanthi-srav123-bucket-af3d7e2b"
 
   tags = {
-    Name        = "raham-srav123"
+    Name        = "sravanthi-srav123"
     Environment = "Dev"
   }
 }
