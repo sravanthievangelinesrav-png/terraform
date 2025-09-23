@@ -1,10 +1,10 @@
 
 # ✅ No provider block here
-resource "aws_s3_bucket" "kavya_bucket" {
-  bucket = "kavya-ram-bucket-dftgfff"
+resource "aws_s3_bucket" "ramya_bucket" {
+  bucket = "ramya-ram-bucket-dftgfft"
 
   tags = {
-    Name        = "kavya-ram-bucket"
+    Name        = "ramya-ram-bucket"
     Environment = "Dev"
   }
 }
