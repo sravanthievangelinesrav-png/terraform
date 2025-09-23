@@ -37,7 +37,7 @@ resource "aws_security_group" "jenkins_sg" {
 
 # 3️⃣ EC2 Instance
 resource "aws_instance" "jenkins_instance" {
-  ami             = "ami-0abcdef1234567890"  # Amazon Linux 2023 AMI
+  ami             = "ami-08982f1c5bf93d976"  # Amazon Linux 2023 AMI
   instance_type   = "t2.micro"
   key_name        = aws_key_pair.maven_key.key_name
   security_groups = [aws_security_group.jenkins_sg.name]
