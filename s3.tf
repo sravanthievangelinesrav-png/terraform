@@ -8,11 +8,11 @@ resource "aws_s3_bucket" "sravanthi_bucket" {
   }
 }
 # ✅ No provider block here
-resource "aws_s3_bucket" "ramu_bucket" {
-  bucket = "ramu-ram-bucket-dftgfff"
+resource "aws_s3_bucket" "kavya_bucket" {
+  bucket = "kavya-ram-bucket-dftgfff"
 
   tags = {
-    Name        = "ramu-ram-bucket"
+    Name        = "kavya-ram-bucket"
     Environment = "Dev"
   }
 }
