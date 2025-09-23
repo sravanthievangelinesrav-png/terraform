@@ -12,7 +12,7 @@ resource "aws_s3_bucket" "ramu_bucket" {
   bucket = "ramu-ram-bucket-dftgfff"
 
   tags = {
-    Name        = "ramu-srav123"
+    Name        = "ramu-ram-bucket"
     Environment = "Dev"
   }
 }
